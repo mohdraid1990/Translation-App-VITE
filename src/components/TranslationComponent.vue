@@ -20,7 +20,10 @@
           <!-- Display the word -->
           <span class="translation">{{ translateWord(word) }}</span>
           <!-- Display the translation -->
-          <button @click="speak(translateWord(word), selectedLanguage)">
+          <button
+            @click="speak(translateWord(word), selectedLanguage)"
+            aria-label="Speak {{ translateWord(word) }}"
+          >
             <!-- Button to speak the translated word -->
             <i class="fas fa-volume-up"></i>
           </button>
@@ -30,18 +33,34 @@
 
     <div class="pagination-controls">
       <!-- Pagination controls for navigating through pages -->
-      <button @click="goToFirstPage" :disabled="currentPage === 1">
+      <button
+        @click="goToFirstPage"
+        :disabled="currentPage === 1"
+        aria-label="Go to first page"
+      >
         <i class="fas fa-angle-double-left"></i> First
       </button>
-      <button @click="prevPage" :disabled="currentPage === 1">
+      <button
+        @click="prevPage"
+        :disabled="currentPage === 1"
+        aria-label="Go to previous page"
+      >
         <i class="fas fa-angle-left"></i> Previous
       </button>
       <span>Page {{ currentPage }} of {{ totalPages }}</span>
       <!-- Display current page number -->
-      <button @click="nextPage" :disabled="currentPage === totalPages">
+      <button
+        @click="nextPage"
+        :disabled="currentPage === totalPages"
+        aria-label="Go to next page"
+      >
         Next <i class="fas fa-angle-right"></i>
       </button>
-      <button @click="goToLastPage" :disabled="currentPage === totalPages">
+      <button
+        @click="goToLastPage"
+        :disabled="currentPage === totalPages"
+        aria-label="Go to last page"
+      >
         Last <i class="fas fa-angle-double-right"></i>
       </button>
     </div>
