@@ -173,7 +173,7 @@ export default {
   flex-direction: column; /* Arrange children in a column */
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
-  background-color: #f3f4f6; /* Light background color */
+  background-color: #ffffff; /* Change background to white for better contrast */
   padding: 30px; /* Padding around the container */
   border-radius: 15px; /* Rounded corners */
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Soft shadow effect */
@@ -184,7 +184,7 @@ export default {
   h1 {
     font-family: "Roboto", sans-serif; /* Font styling for the title */
     font-size: 28px; /* Title font size */
-    color: #2d3748; /* Title color */
+    color: #2d3748; /* Dark color for title for better contrast */
     margin-bottom: 20px; /* Space below the title */
 
     animation: slideDown 1.5s ease-in-out; /* Slide-down animation for title */
@@ -212,7 +212,7 @@ export default {
   label {
     font-family: "Roboto", sans-serif; /* Font for the label */
     font-size: 20px; /* Label font size */
-    color: #4a5568; /* Label color */
+    color: #4a5568; /* Dark color for the label for better contrast */
   }
 
   select {
@@ -221,7 +221,7 @@ export default {
     border: 2px solid #63b3ed; /* Border color */
     border-radius: 8px; /* Rounded corners */
     transition: border-color 0.3s ease; /* Smooth transition for border color */
-    background-color: #fff; /* White background */
+    background-color: #ffffff; /* White background for better contrast */
     cursor: pointer; /* Pointer cursor on hover */
 
     &:focus {
@@ -276,7 +276,7 @@ export default {
   .word {
     font-family: "Roboto", sans-serif; /* Font for the word */
     font-size: 18px; /* Font size for the word */
-    color: #2d3748; /* Color for the word */
+    color: #2d3748; /* Dark color for the word for better contrast */
     cursor: pointer; /* Pointer cursor on hover */
     transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 
@@ -293,7 +293,7 @@ export default {
   .translation {
     font-family: "Roboto", sans-serif; /* Font for the translation */
     font-size: 18px; /* Font size for the translation */
-    color: #63b3ed; /* Color for the translation */
+    color: #63b3ed; /* Light color for translation - consider darkening for better contrast */
 
     @media (max-width: 480px) {
       font-size: 16px; /* Smaller font size for mobile */
@@ -305,7 +305,7 @@ export default {
     border: none; /* No border for button */
     font-size: 24px; /* Font size for button */
     cursor: pointer; /* Pointer cursor on hover */
-    color: #4299e1; /* Color for button */
+    color: #4299e1; /* Color for button - consider darkening for better contrast */
     transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 
     &:hover {
@@ -329,7 +329,7 @@ export default {
 
   button {
     background-color: #4299e1; /* Background color for buttons */
-    color: #ffffff; /* Text color for buttons */
+    color: #ffffff; /* Text color for buttons - consider a darker text color */
     border: none; /* No border for buttons */
     padding: 8px 12px; /* Padding inside buttons */
     border-radius: 8px; /* Rounded corners */
@@ -360,7 +360,7 @@ export default {
   span {
     font-family: "Roboto", sans-serif; /* Font for page indicator */
     font-size: 16px; /* Font size for page indicator */
-    color: #4a5568; /* Color for page indicator */
+    color: #4a5568; /* Dark color for page indicator for better contrast */
   }
 }
 
